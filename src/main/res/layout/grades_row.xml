@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gradeNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade name"
+        android:paddingLeft="15dp"
+        android:paddingTop="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/gradeWeightId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="la ponderation"
+        android:paddingLeft="15dp"
+        android:paddingTop="0dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+    <TextView
+        android:id="@+id/tchass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade:"
+        android:paddingLeft="95dp"
+        android:paddingTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/gradeScoreId"
+        android:layout_toStartOf="@+id/gradeScoreId" />
+    <TextView
+        android:id="@+id/gradeScoreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="100"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <TextView
+        android:id="@+id/gradeDateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/gradeWeightId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Weight:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/tchass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

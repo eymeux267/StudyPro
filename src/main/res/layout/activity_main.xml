@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="uiapp.magadistudio.com.studypro.MainActivity"
+    android:background="#21439b">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/realstudyprologo"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/myCoursesIconId"
+        android:layout_alignRight="@+id/myCoursesIconId"
+        android:layout_alignEnd="@+id/myCoursesIconId" />
+    <ImageView
+    android:layout_width="155dp"
+    android:layout_height="155dp"
+
+    android:background="@drawable/realbook"
+    android:id="@+id/myCoursesIconId"
+        android:layout_alignTop="@+id/myAgendaIconId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+
+        android:background="@drawable/vraiagenda"
+        android:id="@+id/myAgendaIconId"
+        android:layout_above="@+id/settingsIconId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:id="@+id/settingsIconId"
+        android:background="@drawable/realsettings"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/myToolbar"
+        />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/courseNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course name"
+        android:paddingTop="15dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/courseLocationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course location"
+        android:textSize="17dp"
+        android:paddingLeft="2dp"
+        android:layout_below="@+id/courseNameId"
+        android:layout_alignLeft="@+id/courseNameId"
+        android:layout_alignStart="@+id/courseNameId"
+        android:layout_marginTop="17dp" />
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avg grade: "
+        android:paddingRight="85dp"
+        android:layout_alignBottom="@+id/courseGradeId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/courseGradeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:paddingRight="30dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/courseLocationId"
+        android:layout_alignRight="@+id/grade"
+        android:layout_alignEnd="@+id/grade" />
+    <TextView
+        android:id="@+id/courseAbvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="LOG1000"
+        android:layout_below="@+id/courseNameId"
+        android:layout_alignLeft="@+id/courseNameId"
+        android:layout_alignStart="@+id/courseNameId"
+        android:paddingLeft="3dp"/>
+
+</RelativeLayout>
